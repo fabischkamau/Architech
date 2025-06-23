@@ -1,0 +1,34 @@
+# Node.js/Next.js (frontend)
+node_modules/
+.next/
+out/
+build/
+coverage/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.env*
+.vercel
+.DS_Store
+
+# Python (backend)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.egg-info/
+.env
+.python-version
+uv.lock
+
+# General
+*.pem
+*.log
+*.sqlite
+*.db
+.idea/
+.vscode/
+*.swp
