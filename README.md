@@ -30,6 +30,29 @@ Architech consists of a frontend web application and a backend AI agent server:
 - `frontend/` — Next.js 14 app (React, TypeScript)
 - `backend/` — FastAPI Python app
 - `assets/` — Example images and diagrams
+- `dataset/` — Example datasets for local testing (e.g., Neo4j backups)
+
+---
+
+## Datasets for Local Testing
+
+To help you get started quickly, the `dataset/` folder contains example datasets such as Neo4j database backups.  
+You can use these to populate your local Neo4j instance for development and testing.
+
+**Example:**
+
+- `dataset/neo4j-2025-07-07T23-30-20-a8d23e18.backup` — Neo4j backup file
+
+**To restore the dataset:**
+
+1. Start your local Neo4j instance.
+2. Use the Neo4j Admin tool to restore the backup:
+
+   ```sh
+   neo4j-admin database restore --from-path=dataset/neo4j-2025-07-07T23-30-20-a8d23e18.backup --database=neo4j --force
+   ```
+
+   Refer to the [Neo4j documentation](https://neo4j.com/docs/operations-manual/current/backup-restore/restore-dump/) for more details.
 
 ---
 
@@ -48,3 +71,7 @@ For detailed installation and setup instructions for each part of the project, p
 - Backend: edit files in `backend/agents/`, `backend/orchestrator/`, etc.
 
 ---
+
+## License
+
+[MIT](LICENSE)
